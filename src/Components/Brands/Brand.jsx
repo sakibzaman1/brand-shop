@@ -9,7 +9,7 @@ const Brand = ({ brand }) => {
 
     return (
         <div>
-            <Link>
+            <Link to="/addproduct">
 
                 <div className="card bg-base-100 shadow-xl h-96">
                     <figure className="px-10 pt-10">

@@ -1,15 +1,22 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { BiLowVision, BiShowAlt } from "react-icons/bi";
 import Navbar from "../../Components/Header/Navbar";
+import swal from 'sweetalert';
+import { AuthContext } from "../../Providers/AuthProvider";
+
 
 
 const SignUp = () => {
+
+    const { createUser, updateUser, goToTop } = useContext(AuthContext);
 
     const [showPassword, setShowPassword] = useState(false);
     const [isDisabled, setIsDisabled] = useState(true);
     const [registerError, setRegisterError] = useState('');
     const [registrationSuccess, setRegistrationSuccess] = useState('');
+
+    const navigate = useNavigate();
 
     // set button disabled
 
@@ -53,6 +60,44 @@ const SignUp = () => {
             setRegisterError("Your Password must have one special character")
             return;
         }
+
+        // create User
+
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user);
+                e.target.reset();
+
+                updateUser(name, photo)
+                    .then(() => {
+                        swal({
+                            position: 'top-center',
+                            icon: 'success',
+                            title: 'Registration Successfull',
+                            showConfirmButton: false,
+                            showCancelButton: false,
+                            timer: 2000
+                        });
+                        // Swal.fire({
+                        //     position: 'top-center',
+                        //     icon: 'success',
+                        //     title: 'Registration Successful',
+                        //     showConfirmButton: false,
+                        //     timer: 2500
+                        //   })
+                        //   navigate user
+                        setTimeout(() => {
+                            navigate('/')
+                        }, 2000)
+                    })
+                    .catch()
+
+
+            })
+            .catch(error => {
+                console.log(error.message);
+                setRegisterError(error.message)
+            });
     }
 
     return (
@@ -121,7 +166,7 @@ const SignUp = () => {
                             </div>
 
                             <div className="text-center pt-10">
-                                <small className="font-medium text-black">Already Have an Account?  Please<Link to="/signin" className="text-green-900 ml-2 font-bold"><button>Sign in</button></Link></small>
+                                <small className="font-medium text-black">Already Have an Account?  Please<Link to="/signin" className="text-green-900 ml-2 font-bold"><button onClick={goToTop}>Sign in</button></Link></small>
                             </div>
 
 

@@ -4,6 +4,10 @@ import Home from "../Pages/Home/Home";
 import './router.css'
 import SignIn from "../Pages/SignIn/SignIn";
 import SignUp from "../Pages/SignUp/SignUp";
+import AddProduct from "../Components/AddProduct/AddProduct";
+import PrivateRoute from "../PrivateRoutes/PrivateRoute";
+import MyCart from "../Components/MyCart/MyCart";
+import Profile from "../Components/Profile/Profile";
 
 
 const router = createBrowserRouter([
@@ -23,6 +27,18 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
+            },
+            {
+                path: '/addproduct',
+                element: <PrivateRoute><AddProduct></AddProduct></PrivateRoute>
+            },
+            {
+                path: '/mycart',
+                element: <PrivateRoute><MyCart></MyCart></PrivateRoute>
+            },
+            {
+                path: '/profile',
+                element: <PrivateRoute><Profile></Profile></PrivateRoute>
             }
         ]
     }
