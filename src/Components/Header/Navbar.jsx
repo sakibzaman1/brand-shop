@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './navbar.css'
 
 
 const Navbar = () => {
     return (
-        <div className="mt-4">
+        <div className="pt-2 pb-2">
             <div className="navbar gap-80 text-white ">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -13,7 +13,7 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li className="navLinks"><NavLink>Home</NavLink></li>
-                            <li className="navLinks"><NavLink>Add Product</NavLink></li>  
+                            <li className="navLinks"><NavLink>Add Product</NavLink></li>
                             <li className="navLinks"><NavLink>My Cart</NavLink></li>
                             <li className="navLinks"><NavLink>About</NavLink></li>
                             <li className="navLinks"><NavLink>Profile</NavLink></li>
@@ -31,7 +31,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button  className=" rounded-sm w-20 hover:scale-110  bg-transparent  text-white font-semibold hover:text-white py-2  border-none border-[#403F3F] hover:border-transparent  transition duration-300 ease-in-out">Login</button>
+                    <Link to="/signin">
+                        <button className=" rounded-sm w-20 hover:scale-110  bg-transparent  text-white font-semibold hover:text-white py-2  border-none border-[#403F3F] hover:border-transparent  transition duration-300 ease-in-out">Sign in</button>
+                    </Link>
                 </div>
             </div>
         </div>
