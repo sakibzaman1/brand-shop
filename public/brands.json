@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "brandName": "NIKE",
+      "brandImage": "https://i.ibb.co/bXQksmt/nikeLogo.jpg",
+      "adImages": ["gucciAd1.jpg", "gucciAd2.jpg", "gucciAd3.jpg"]
+    },
+    {
+      "id": 2,
+      "brandName": "ADIDAS",
+      "brandImage": "https://i.ibb.co/YkpgMsH/adidas-Logo.jpg",
+      "adImages": ["pradaAd1.jpg", "pradaAd2.jpg", "pradaAd3.jpg"]
+    },
+    {
+      "id": 3,
+      "brandName": "GUCCI",
+      "brandImage": "https://i.ibb.co/tLWZFPY/gucci-Logo.jpg",
+      "adImages": ["louisVuittonAd1.jpg", "louisVuittonAd2.jpg", "louisVuittonAd3.jpg"]
+    },
+    {
+      "id": 4,
+      "brandName": "H & M",
+      "brandImage": "https://i.ibb.co/Zgw397Z/h-mLogo.jpg",
+      "adImages": ["chanelAd1.jpg", "chanelAd2.jpg", "chanelAd3.jpg"]
+    },
+    {
+      "id": 5,
+      "brandName": "LEVIS",
+      "brandImage": "https://i.ibb.co/XWbSW67/levis-Logo.jpg",
+      "adImages": ["versaceAd1.jpg", "versaceAd2.jpg", "versaceAd3.jpg"]
+    },
+    {
+        "id": 6,
+        "brandName": "ZARA",
+        "brandImage": "https://i.ibb.co/Qv2wLh3/zaraLogo.jpg",
+        "adImages": ["versaceAd1.jpg", "versaceAd2.jpg", "versaceAd3.jpg"]
+      }
+  ]
+  
