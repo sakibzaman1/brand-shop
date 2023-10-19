@@ -1,12 +1,32 @@
 /* eslint-disable react/prop-types */
 
-import { Link } from "react-router-dom";
 
 
-const ProductCard = ({ product }) => {
+import swal from "sweetalert";
 
-    const { _id, name, brand, photo, price, rating, category } = product;
-    // console.log(_id)
+
+const MyProduct = ({ myProduct, myCurrentProducts, setMyCurrentProducts }) => {
+
+    const { _id, name, brand, photo, price, rating, category } = myProduct;
+
+    
+
+    const handleRemoveProduct = (_id) => {
+        // console.log(_id)
+        fetch(`http://localhost:5000/myProducts/${_id}`,{
+            method: 'DELETE'
+        })
+        .then(res=> res.json())
+        .then(data=> {
+            console.log(data);
+            if(data.deletedCount>0){
+                swal("Deleted!", "Your Product Has been removed", "success");
+                const remainingProducts = myCurrentProducts.filter(prod => prod._id !== _id)
+                    setMyCurrentProducts(remainingProducts)
+            }
+
+        })
+    }
 
     return (
         <div>
@@ -20,12 +40,7 @@ const ProductCard = ({ product }) => {
                         <p>Price : $ <span className="text-red-600">{price}</span></p>
                         <p>Rating : {rating}</p>
                         <div className="flex gap-6 mt-6">
-                            <Link to={`/updateProduct/${_id}`}>
-                                <button className="px-3 bg-gradient-to-l from-amber-600 to-amber-950 text-white rounded-sm">Update</button>
-                            </Link>
-                            <Link to={`/productDetails/${_id}`}>
-                                <button className="px-3 bg-gradient-to-l from-amber-600 to-amber-950 text-white rounded-sm">Details</button>
-                            </Link>
+                            <button onClick={()=> handleRemoveProduct(_id)} className="px-3 bg-gradient-to-l from-amber-600 to-amber-950 text-white rounded-sm">Remove</button>
                         </div>
                     </div>
                 </div>
@@ -34,4 +49,4 @@ const ProductCard = ({ product }) => {
     );
 };
 
-export default ProductCard;
+export default MyProduct;
