@@ -8,6 +8,7 @@ import AddProduct from "../Components/AddProduct/AddProduct";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import MyCart from "../Components/MyCart/MyCart";
 import Profile from "../Components/Profile/Profile";
+import UnderBrand from "../Components/UnderBrand/UnderBrand";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
                 loader: ()=> fetch('/brands.json')
+            },
+            {
+                path: '/underBrand/:id',
+                element: <PrivateRoute><UnderBrand></UnderBrand></PrivateRoute>,
+                loader: ()=> fetch(`/brands.json`)
             },
             {
                 path: '/signin',

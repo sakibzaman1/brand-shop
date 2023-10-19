@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 const Brand = ({ brand }) => {
 
 
-    const { id, brandName, brandImage, adImages } = brand;
+    const { id, brandName, brandImage } = brand;
 
     return (
         <div>
-            <Link to="/addproduct">
+            <Link to={`/underBrand/${id}`}>
 
                 <div className="card bg-base-100 shadow-xl h-96">
                     <figure className="px-10 pt-10">

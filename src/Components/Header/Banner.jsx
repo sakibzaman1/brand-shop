@@ -9,7 +9,7 @@ const Banner = () => {
             <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover opacity-95 ">
                 <source src={bannerVideo} type="video/mp4" />
             </video>
-            <div className="text-start text-neutral-content absolute lg:bottom-28 lg:left-10 z-10 ">
+            <div className="text-start text-neutral-content absolute left-6 lg:bottom-28 lg:left-10 z-10 ">
                 <div className="flex flex-col items-start lg:space-y-20">
                     <h1 className="mb-10 text-5xl lg:text-7xl font-bold mt-20 bg-gradient-to-r from-amber-400 via-amber-700 inline-block text-transparent bg-clip-text ">Elevate <br />Your Style <br /> Define <br /> Your Identity</h1>
                     

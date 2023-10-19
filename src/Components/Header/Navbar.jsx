@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <div className="pt-2 pb-2">
-            <div className={`navbar ${ user? 'lg:gap-64' : 'lg:gap-72'} text-white `}>
+            <div className={`navbar gap-32 ${ user? 'lg:gap-64' : 'lg:gap-72'} text-white `}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">

@@ -3,37 +3,37 @@
       "id": 1,
       "brandName": "NIKE",
       "brandImage": "https://i.ibb.co/bXQksmt/nikeLogo.jpg",
-      "adImages": ["gucciAd1.jpg", "gucciAd2.jpg", "gucciAd3.jpg"]
+      "adImages": ["https://i.ibb.co/wBB4BMv/ashkan-forouzani-z-Zizu-TAJ8-HU-unsplash.jpg", "https://i.ibb.co/9N2WWJf/domino-164-6w-VEHf-I-unsplash.jpg", "https://i.ibb.co/ZmhH6Th/george-pagan-iii-Psif-AN6-z-k-unsplash.jpg"]
     },
     {
       "id": 2,
       "brandName": "ADIDAS",
       "brandImage": "https://i.ibb.co/YkpgMsH/adidas-Logo.jpg",
-      "adImages": ["pradaAd1.jpg", "pradaAd2.jpg", "pradaAd3.jpg"]
+      "adImages": ["https://i.ibb.co/TYg6pMM/camilla-carvalho-Cgb4g-MKRc-MA-unsplash.jpg", "https://i.ibb.co/6RMRgzH/chuttersnap-z-Ma-QFh-0aj-A-unsplash.jpg", "https://i.ibb.co/xFb2hfm/max-letek-Svf-Bv5-FLr-Hg-unsplash.jpg.jpg"]
     },
     {
       "id": 3,
       "brandName": "GUCCI",
       "brandImage": "https://i.ibb.co/tLWZFPY/gucci-Logo.jpg",
-      "adImages": ["louisVuittonAd1.jpg", "louisVuittonAd2.jpg", "louisVuittonAd3.jpg"]
+      "adImages": ["https://i.ibb.co/vYvcgQ3/dima-pechurin-qgu-UJmz-Gqy-Q-unsplash.jpg", "https://i.ibb.co/1vF0zns/james-ree-Zme-Ftu11-Hpc-unsplash.jpg", "https://i.ibb.co/VBYDzBQ/julien-tondu-0-Lw-EQ2dow-M8-unsplash.jpg"]
     },
     {
       "id": 4,
       "brandName": "H & M",
       "brandImage": "https://i.ibb.co/Zgw397Z/h-mLogo.jpg",
-      "adImages": ["chanelAd1.jpg", "chanelAd2.jpg", "chanelAd3.jpg"]
+      "adImages": ["https://i.ibb.co/9b2TJsm/fernand-de-canne-2f-NMd-A6a5ck-unsplash.jpg", "https://i.ibb.co/09DPby4/juan-di-nella-Nu1-ZIdf-XEjc-unsplash.jpg", "https://i.ibb.co/vxwjR24/meghna-r-i-N-Zmxm46-Oo-unsplash.jpg"]
     },
     {
       "id": 5,
       "brandName": "LEVIS",
       "brandImage": "https://i.ibb.co/XWbSW67/levis-Logo.jpg",
-      "adImages": ["versaceAd1.jpg", "versaceAd2.jpg", "versaceAd3.jpg"]
+      "adImages": ["https://i.ibb.co/dgw3N7T/abhidev-vaishnav-c-Lcox-RGcf-0-unsplash.jpg", "https://i.ibb.co/KyyV0wv/lan-deng-quddu-d-ZKk-Q-unsplash.jpg", "https://i.ibb.co/9yx004N/mubariz-mehdizadeh-KGLSvc23-Az-Q-unsplash.jpg"]
     },
     {
         "id": 6,
         "brandName": "ZARA",
         "brandImage": "https://i.ibb.co/Qv2wLh3/zaraLogo.jpg",
-        "adImages": ["versaceAd1.jpg", "versaceAd2.jpg", "versaceAd3.jpg"]
+        "adImages": ["https://i.ibb.co/5WrfJQt/highlight-id-Db-Od-CSoefsg-unsplash.jpg", "https://i.ibb.co/hdpmwpC/lena-myzovets-GTq-Iaz-U-o-Wk-unsplash.jpg", "https://i.ibb.co/p1cNT75/sahej-brar-9-Ylm-T1qco-unsplash.jpg"]
       }
   ]
   
