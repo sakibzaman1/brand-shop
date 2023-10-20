@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
             </nav>
             <aside>
-                <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © 2023 - All right reserved by<strong className="text-amber-700 ml-2">Md. Sakib Uz Zaman</strong> </p>
             </aside>
         </footer>
     );

@@ -14,7 +14,7 @@ const Profile = () => {
             <div className="bg-gradient-to-r from-amber-600 to-amber-950">
                 <Navbar></Navbar>
             </div>
-            <div className="min-h-screen flex justify-center items-center bg-base-200">
+            <div className="min-h-screen flex justify-center items-center bg-base-200 p-10 lg:p-0">
                 <div className="card w-96 bg-gradient-to-r from-amber-200 via-amber-100  shadow-xl">
                     <figure className="px-10 pt-10">
                         <img src={user.photoURL} alt="Shoes" className="rounded-full" />

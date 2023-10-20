@@ -16,7 +16,7 @@ const Home = () => {
                 <Header></Header>
             </div>
             <div>
-            <h1 className="text-5xl font-semibold text-center mt-20">Our Brands</h1>
+                <h1 className="text-5xl font-semibold text-center mt-20">Our Brands</h1>
                 <div className="grid lg:grid-cols-3 gap-10 lg:gap-20 p-6 lg:p-20">
                     {
                         brands.map(brand => <Brand key={brand.id} brand={brand}></Brand>)
@@ -26,7 +26,8 @@ const Home = () => {
             <div>
                 <Faq></Faq>
             </div>
-            <div className="w-2/6 flex justify-center lg:w-full mb-20">
+            <div className="mb-20">
+                <h1 className="text-5xl text-center mb-20 font-semibold mt-20">Stats</h1>
                 <Stats></Stats>
             </div>
         </div>

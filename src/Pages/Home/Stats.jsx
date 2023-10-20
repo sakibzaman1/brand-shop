@@ -2,9 +2,9 @@
 
 const Stats = () => {
     return (
-        <div>
-            <h1 className="text-center font-bold text-5xl my-10 ">Stats</h1>
-            <div className="stats shadow">
+        <div className="flex mx-auto px-4 lg:px-10">
+            
+            <div className="stats shadow flex mx-auto w-full">
 
                 <div className="stat">
                     <div className="stat-figure text-primary">

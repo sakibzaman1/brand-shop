@@ -50,7 +50,7 @@ const AddProduct = () => {
             </div>
             <div className="bg-amber-100 p-20 w-full min-h-screen">
                 <h1 className="text-center text-4xl mb-20">Add a Product</h1>
-                <form onSubmit={handleAddProduct} className="w-full lg:space-y-16">
+                <form onSubmit={handleAddProduct} className="w-full lg:space-y-16 space-y-10">
                     {/* form row 1*/}
                     <div className="lg:flex justify-center gap-10 ">
                         <div className="form-control lg:w-1/2">

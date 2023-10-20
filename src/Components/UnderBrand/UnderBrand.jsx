@@ -53,7 +53,7 @@ const UnderBrand = () => {
 
                     products.length > 0 ?
 
-                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-20 p-20">
+                        <div className="grid lg:grid-cols-2 grid-cols-1 gap-20 lg:p-20">
                             {
 
                                 products.map(product => <ProductCard key={product.id} product={product}></ProductCard>)

@@ -30,7 +30,9 @@ const MyCart = () => {
                         }
                     </div> :
 
-                    <h1 className="text-center my-10 text-red-600">Nothing Added Yet</h1>
+                    <div className="p-20 flex justify-center min-h-screen">
+                        <h1 className="my-10 text-red-600 text-5xl">Nothing Added Yet</h1>
+                    </div>
 
                 }
             </div>
