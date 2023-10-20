@@ -8,6 +8,7 @@ import ProductCard from "./ProductCard";
 
 const UnderBrand = () => {
 
+    const [loading, setLoading] = useState(true);
 
     const [products, setProducts] = useState([]);
 
@@ -21,11 +22,12 @@ const UnderBrand = () => {
     const brandNameLowerCase = brandName.toLowerCase();
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://fashion-savvy-server-3droogfc9-sakib-zamans-projects.vercel.app/products')
             .then(res => res.json())
             .then(data => {
                 const filteredProducts = data.filter(product => (product.brand).toLowerCase() === brandNameLowerCase);
                 setProducts(filteredProducts);
+                setLoading(false);
             })
     }, [brandNameLowerCase]);
 
@@ -45,6 +47,10 @@ const UnderBrand = () => {
             <h1 className="text-center text-3xl mb-6 mt-8 font-bold">Products under {brandName}</h1>
             <div className="mb-10">
                 {
+                    loading? 
+
+                    <span className="min-h-screen flex mx-auto my-10 loading loading-spinner loading-lg"></span> :
+
                     products.length > 0 ?
 
                         <div className="grid lg:grid-cols-2 grid-cols-1 gap-20 p-20">

@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
         const myAddedProduct = {name: name, brand: brand, photo: photo, category: category, price: price, rating: rating};
 
-        fetch('http://localhost:5000/myProducts', {
+        fetch('https://fashion-savvy-server-3droogfc9-sakib-zamans-projects.vercel.app/myProducts', {
             method: 'POST',
             headers: {
                 'content-type' : 'application/json',

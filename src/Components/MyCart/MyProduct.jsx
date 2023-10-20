@@ -13,7 +13,7 @@ const MyProduct = ({ myProduct, myCurrentProducts, setMyCurrentProducts }) => {
 
     const handleRemoveProduct = (_id) => {
         // console.log(_id)
-        fetch(`http://localhost:5000/myProducts/${_id}`,{
+        fetch(`https://fashion-savvy-server-3droogfc9-sakib-zamans-projects.vercel.app/myProducts/${_id}`,{
             method: 'DELETE'
         })
         .then(res=> res.json())

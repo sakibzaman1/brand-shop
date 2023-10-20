@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             {
                 path: '/productDetails/:id',
                 element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({params})=> fetch(`https://fashion-savvy-server-3droogfc9-sakib-zamans-projects.vercel.app/products/${params.id}`)
             },
             {
                 path: '/signin',
@@ -50,12 +50,12 @@ const router = createBrowserRouter([
             {
                 path: '/updateProduct/:id',
                 element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({params})=> fetch(`https://fashion-savvy-server-3droogfc9-sakib-zamans-projects.vercel.app/products/${params.id}`)
             },
             {
                 path: '/mycart',
                 element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-                loader: ()=> fetch('http://localhost:5000/myProducts')
+                loader: ()=> fetch('https://fashion-savvy-server-3droogfc9-sakib-zamans-projects.vercel.app/myProducts')
             },
             {
                 path: '/profile',
