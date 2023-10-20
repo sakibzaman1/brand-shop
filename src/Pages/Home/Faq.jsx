@@ -3,7 +3,7 @@ import faqLogo from '../../assets/Others/faq.png'
 const Faq = () => {
     return (
         <div>
-            <h1 className='text-center text-4xl font-bold mt-16'>Some Common Questions</h1>
+            
             <div className='lg:flex items-center p-10 lg:p-20 gap-10'>
                 <div className='lg:w-1/2'>
                     <img className='w-full h-[300px] lg:h-[600px]' src={faqLogo} alt="" />
