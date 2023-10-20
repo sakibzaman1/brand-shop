@@ -29,12 +29,12 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li className="navLinks"><NavLink to="/">Home</NavLink></li>
-                            <li className="navLinks"><NavLink to="/addproduct">Add Product</NavLink></li>
-                            <li className="navLinks"><NavLink to="/mycart">My Cart</NavLink></li>
-                            <li className="navLinks"><NavLink to="/about">About</NavLink></li>
-                            <li className="navLinks text-black"><NavLink to="/profile">{
-                                user ? <div className="text-black">{user.displayName}</div> : "Profile"
+                            <li className="navLinks text-amber-600"><NavLink to="/">Home</NavLink></li>
+                            <li className="navLinks text-amber-600"><NavLink to="/addproduct">Add Product</NavLink></li>
+                            <li className="navLinks text-amber-600"><NavLink to="/mycart">My Cart</NavLink></li>
+                            <li className="navLinks text-amber-600"><NavLink to="/about">About</NavLink></li>
+                            <li className="navLinks text-amber-600"><NavLink to="/profile">{
+                                user ? <div className="text-amber-600">{user.displayName}</div> : "Profile"
                             }</NavLink></li>
                         </ul>
                     </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
                         <li className="navLinks"><NavLink to="/">Home</NavLink></li>
                         <li className="navLinks"><NavLink to="/addproduct">Add Product</NavLink></li>
                         <li className="navLinks"><NavLink to="/mycart">My Cart</NavLink></li>
-                        <li className="navLinks"><NavLink to="about">About</NavLink></li>
+                        <li className="navLinks"><NavLink to="/about">About</NavLink></li>
                         <li className="navLinks"><NavLink to="/profile">{
                             user ? <div className="flex items-center gap-2"><BiUserCheck size={20}></BiUserCheck>{user.displayName}</div> : <div className="flex items-center gap-2"><AiOutlineUserAdd></AiOutlineUserAdd><p>Profile</p></div>
                         }</NavLink></li>

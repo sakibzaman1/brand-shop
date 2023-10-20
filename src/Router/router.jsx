@@ -12,6 +12,7 @@ import UnderBrand from "../Components/UnderBrand/UnderBrand";
 import ProductDetails from "../Components/UnderBrand/ProductDetails";
 import UpdateProduct from "../Components/UpdateProduct/UpdateProduct";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
+import About from "../Pages/About/About";
 
 
 const router = createBrowserRouter([
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
                 path: '/mycart',
                 element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
                 loader: ()=> fetch('https://fashion-savvy-server-3droogfc9-sakib-zamans-projects.vercel.app/myProducts')
+            },
+            {
+                path: '/about',
+                element: <About></About>
             },
             {
                 path: '/profile',
