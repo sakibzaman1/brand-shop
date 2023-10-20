@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <div className="pt-2 pb-2">
-            <div className={`navbar gap-32 ${ user? 'lg:gap-64' : 'lg:gap-72'} text-white `}>
+            <div className={`navbar gap-52 ${ user? 'lg:gap-56' : 'lg:gap-72'} text-white `}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -38,7 +38,9 @@ const Navbar = () => {
                             }</NavLink></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Fashion Savvy</a>
+                    <div className=" lg:pl-8">
+                    <Link><img className="lg:h-20" src="https://i.ibb.co/gzMVTXt/Fashion-savvy-logo-no-Bg-small.png" alt="" /></Link>
+                    </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu-horizontal px-1 gap-16">

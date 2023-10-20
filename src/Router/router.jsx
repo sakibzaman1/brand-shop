@@ -11,12 +11,14 @@ import Profile from "../Components/Profile/Profile";
 import UnderBrand from "../Components/UnderBrand/UnderBrand";
 import ProductDetails from "../Components/UnderBrand/ProductDetails";
 import UpdateProduct from "../Components/UpdateProduct/UpdateProduct";
+import ErrorPage from "../Components/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
