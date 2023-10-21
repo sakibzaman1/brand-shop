@@ -2,7 +2,10 @@
 
 A Fashion & Apparel website for exploring thousands of products under some renowned brands.
 
-### Live Site Link : [ Fashion Savvy ](https://fashion-savvy.web.app/)
+### Live Site Link `Netlify` : [ Fashion Savvy ](https://fashion-savvy-sakib.netlify.app/)
+### Live Site Link `Firebase` : [ Fashion Savvy ](https://fashion-savvy.web.app/)
+
+_Please Check the other link if first one doesn't work_
 
 ***
 
